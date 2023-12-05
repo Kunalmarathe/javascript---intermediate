@@ -8,8 +8,8 @@
 // array
 
 const myArr = [0, 1, 2, 3, 4, 5]
-console.log(myArr[0]);
-console.log(myArr[8]);
+// console.log(myArr[0]);
+// console.log(myArr[8]);
 const myVisitedCities = ["pune", "mysore"]
 
 // Array methods
@@ -25,10 +25,22 @@ const myVisitedCities = ["pune", "mysore"]
 // console.log(myArr)
 
 // console.log(myArr.includes(2)); // boolean type
-// console.log(myArr.indexOf(2));
+// console.log(myArr.indexOf(2));`
 // console.log(myArr.indexOf(19)); // output is -1
 
 // const newArr = myArr.join() // adds all the elements of an arrat into a string
 // console.log(newArr);
 // console.log(typeof newArr);
 
+// slice() and splice()
+
+const arr1 = myArr.slice(1, 4)
+console.log("main", myArr);
+console.log(arr1);
+
+
+const arr2 = myArr.splice(1, 4)
+console.log("main", myArr);
+console.log(arr2);
+
+console.log("main =>", myArr.length);
