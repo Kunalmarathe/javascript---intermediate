@@ -33,14 +33,33 @@
 
 // console.log("Answer is:", ans2);
 
-function loginUserStatus(username){
-    if(!username){
-        console.log("Please enter a username");
-        return // here return is used for not to exicute the lines after it.
-    }
-    return `${username} is logged in`
-}
+// function loginUserStatus(username){
+//     if(!username){
+//         console.log("Please enter a username");
+//         return // here return is used for not to exicute the lines after it.
+//     }
+//     return `${username} is logged in`
+// }
 
-console.log(loginUserStatus());
+// console.log(loginUserStatus());
 // if we want to print the default user name for login then mention the default name
 // in the function declaration like function loginUserStatus("Tom"){   }
+
+//(...1) it called as rest or spread operator, but here it is rest operator. 
+// the rest operator is pack all the values in bundle and give it to the function.
+
+// function calulateCartPrice(...num1){
+//     return num1;
+// }
+
+// console.log(calulateCartPrice(10, 20, 30, 40, 50));
+
+// but if we mention above function as below then
+
+function calulateCartPrice(count1, count2, ...num1){
+    return num1;
+}
+
+console.log(calulateCartPrice(10, 20, 30, 40, 50)); // the first two values goes to 
+// count1 and count2. The rest values goes into the num1.
+
