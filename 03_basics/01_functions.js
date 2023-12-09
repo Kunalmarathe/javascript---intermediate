@@ -73,6 +73,7 @@ function handleTheObjects(anything){
 }
 
 // handleTheObjects(user)
+// like wise we can also pass the object value in below method
 
 handleTheObjects({
     userName : "sachin",
