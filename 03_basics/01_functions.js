@@ -63,3 +63,24 @@ function calulateCartPrice(count1, count2, ...num1){
 console.log(calulateCartPrice(10, 20, 30, 40, 50)); // the first two values goes to 
 // count1 and count2. The rest values goes into the num1.
 
+const user = {
+    userName : "Kunal",
+    price : 199
+}
+
+function handleTheObjects(anything){
+    console.log(`The total for the ${anything.userName} is ${anything.price}`); 
+}
+
+// handleTheObjects(user)
+
+handleTheObjects({
+    userName : "sachin",
+    price : 299
+})
+
+function getThirdArray(getValue){
+    return getValue[2]
+}
+
+console.log(getThirdArray([23, 434, 453, 63]));
