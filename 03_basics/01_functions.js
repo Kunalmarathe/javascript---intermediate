@@ -84,4 +84,16 @@ function getThirdArray(getValue){
     return getValue[2]
 }
 
-console.log(getThirdArray([23, 434, 453, 63]));
+// console.log(getThirdArray([23, 434, 453, 63]));
+
+let user2 = {
+    customerName : "Virat",
+    age : 32,
+    city : "Mumbai"
+}
+
+function infoOfUser(functionUser){
+    console.log(`${functionUser.customerName} has ${functionUser.age} age and he is from ${functionUser.city}`)
+}
+
+infoOfUser(user2)
